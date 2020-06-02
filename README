@@ -1,4 +1,4 @@
-A script that is used to erase watermask from image.
+A script that is used to erase watermask from text-only-image.
 
 Doesn't care if the watermask is grey or colurful.
 
