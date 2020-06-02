@@ -1,7 +1,7 @@
 import cv2
 import os
 
-#lllll
+
 def get_all(cwd):
     result=[]
     get_dir = os.listdir(cwd)
@@ -14,14 +14,14 @@ def get_all(cwd):
     return result
 
 
-def dewater_print(name):
+def dewatermask(name):
     img = cv2.imread(name)
-    height = img.shape[0]  # 将tuple中的元素取出，赋值给height，width，channels
+    height = img.shape[0]  
     width = img.shape[1]
     channels = img.shape[2]
 
-    for row in range(height):  # 遍历每一行
-        for col in range(width):  # 遍历每一列for channel in range(channels):
+    for row in range(height):  
+        for col in range(width):  
             sum = int(img[row][col][0]) + int(img[row][col][1]) + int(img[row][col][2])
             if sum > 710:
                 img[row][col][0] = 255
