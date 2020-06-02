@@ -1,7 +1,7 @@
 import cv2
 import os
 
-
+#lllll
 def get_all(cwd):
     result=[]
     get_dir = os.listdir(cwd)
